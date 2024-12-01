@@ -1,5 +1,5 @@
 #Importacion
-from operaciones import sumar, restar, multiplicacion,dividir
+from operaciones import sumar, restar, multiplicacion,dividir,factorial_recursivo
 
 def mostrarmenu():
     print("Que desea: \n 1. Sumar numeros \n 2.Restar \n 3.Multiplicar \n 4.Dividir \n 5. Salir")
@@ -20,6 +20,9 @@ def mostrarmenu():
             dividir(pedirvalor1(),pedirvalor2())
         elif(numero==5):
             print("Saliendo del programa5")
+        elif(numero==6):
+            print("Ha seleccionado factorial recursivo")
+            factorial_recursivo(pedirvalor1())
         else:
             print("Numero no registrado ")
 
