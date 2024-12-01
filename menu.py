@@ -1,5 +1,5 @@
 #Importacion
-from operaciones import sumar, restar, multiplicacion,dividir, factorial_iterativo, factorial_recursivo
+from operaciones import sumar, restar, multiplicacion,dividir, factorial_iterativo, factorial_recursivo, fibonacci_iterativo
 
 def mostrarmenu():
     print("Que desea: \n 1. Sumar numeros \n 2.Restar \n 3.Multiplicar \n 4.Dividir \n 5. Salir \n 6. Factorial")
