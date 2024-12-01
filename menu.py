@@ -1,11 +1,11 @@
 #Importacion
-from operaciones import sumar, restar, multiplicacion,dividir,factorial_recursivo
+from operaciones import sumar, restar, multiplicacion,dividir, factorial_iterativo, factorial_recursivo
 
 def mostrarmenu():
-    print("Que desea: \n 1. Sumar numeros \n 2.Restar \n 3.Multiplicar \n 4.Dividir \n 5. Salir")
+    print("Que desea: \n 1. Sumar numeros \n 2.Restar \n 3.Multiplicar \n 4.Dividir \n 5. Salir \n 6. Factorial")
     numero = 0
     while(numero!=5):
-        numero = int(input("Introduce un numero -> "))
+        numero = int(input("Introduce un numero (1-6) -> "))
         if(numero==1):
             print("Ha seleccionado sumar")
             sumar(pedirvalor1(),pedirvalor2())
@@ -19,10 +19,10 @@ def mostrarmenu():
             print("Ha seleccionado dividir")
             dividir(pedirvalor1(),pedirvalor2())
         elif(numero==5):
-            print("Saliendo del programa5")
+            print("Saliendo del programa")
         elif(numero==6):
-            print("Ha seleccionado factorial recursivo")
-            factorial_recursivo(pedirvalor1())
+            print("Ha seleccionado el factorial")
+            factorial_iterativo(pedirvalor1())
         else:
             print("Numero no registrado ")
 

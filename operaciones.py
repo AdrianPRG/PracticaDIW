@@ -34,11 +34,18 @@ def dividir(num1, num2):
     except ValueError:
         print("Algun elemento no es numerico")
 
-
 def factorial_recursivo(num):
     if num == 0: 
         return 1
     else:
         return num * factorial_recursivo(num - 1)
+def factorial_iterativo(num):
+    try:
+        num = int(num)
+        for x in range(1,num):
+            num*=x
+        print("El factorial es", num)
+    except ValueError:
+        print("Ha ocurrido un error, elemento no numerico")
 
    
