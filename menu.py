@@ -11,6 +11,8 @@ def mostrarmenu():
             restar(pedirvalor1(),pedirvalor2())
         elif(numero==3):
             multiplicacion(pedirvalor1(),pedirvalor2())
+        elif(numero==4):
+            dividir(pedirvalor1(),pedirvalor2())
         else:
             print("Numero no registrado")
 
