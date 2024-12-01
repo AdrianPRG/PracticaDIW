@@ -19,3 +19,11 @@ def multiplicacion(num1,num2):
     else:
        print("Alguno no es entero")
 
+def dividir(num1, num2):
+    cociente = 0
+    for _ in range(int(num1)): 
+        if num1 >= num2:
+            num1 -= num2
+            cociente += 1
+    print("La división es:", cociente)
+
