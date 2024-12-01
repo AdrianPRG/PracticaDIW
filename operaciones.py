@@ -1,3 +1,5 @@
+#Mas funciones
+
 def sumar(num1,num2):
     try:
         print("La suma es " , float(num1) + float(num2))
@@ -31,4 +33,5 @@ def dividir(num1, num2):
         print("La división es:", cociente)
     except ValueError:
         print("Algun elemento no es numerico")
+
    
